@@ -28,6 +28,8 @@ output {
 }
 EOF
 
+chmod 777 /var/log/tomcat
+
 systemctl start logstash.service
 systemctl enable logstash.service
 
